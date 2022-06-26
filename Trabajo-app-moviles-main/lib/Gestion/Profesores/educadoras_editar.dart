@@ -64,17 +64,17 @@ class _EducadoraEditarPageState extends State<EducadoraEditarPage> {
                       controller: telefonoCtrl,
                       decoration: InputDecoration(labelText: 'Telefono'),
                     ),
-                    Container(
-                      padding: EdgeInsets.all(30),
-                      width: double.infinity,
-                      child: Text(
-                        'Curso actual: ${nivelCtrl.text}',
-                        style: TextStyle(
-                            fontSize: 19,
-                            fontWeight: FontWeight.bold,
-                            color: Color.fromARGB(255, 244, 40, 17)),
-                      ),
-                    ),
+                    //Container(
+                    //  padding: EdgeInsets.all(30),
+                     // width: double.infinity,
+                    //  child: Text(
+                     //   'Curso actual: ${nivelCtrl.text}',
+                     //   style: TextStyle(
+                      //      fontSize: 19,
+                      //      fontWeight: FontWeight.bold,
+                       //     color: Color.fromARGB(255, 244, 40, 17)),
+                      //),
+                    //),
                     FutureBuilder(
                       future: CursoProvider().getCursos(),
                       builder: (context, AsyncSnapshot snapshot) {
